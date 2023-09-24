@@ -1,4 +1,5 @@
 import app from "./app.js"
+import logger from "./configs/logger.js"
 
 
 // env Variables
@@ -7,5 +8,5 @@ console.log(process.env.NODE_ENV)
 
 
 app.listen(PORT, ()=> {
-    console.log(`server is listening at ${PORT}`);
+    logger.info(`server is listening at ${PORT}`);
 });
